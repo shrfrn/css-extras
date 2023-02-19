@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/specificity.css">
+    <title>specificity</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>spe-ci-fi-ci-ty</span>
+            <span>cascade</span>
+            <span>inheritance</span>
+        </div>
+        <nav>
+            <a href="#h1-outside-div">h1</a>
+            <a href="#h1-in-div">div h1</a>
+            <a href="https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited">Inheritance</a>
+        </nav>
+    </header>        
+    
+    <h1 id="h1-outside-div" class="spe-ci-fi-ci-ty center-text">An &lt;h1&gt;</h1>
+    
+    <div class="heading-container center-text">
+        <h1 id="h1-in-div" class="spe-ci-fi-ci-ty">An &lt;h1&gt; inside a &lt;div&gt;</h1>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/selectors.css">
+        <title>selectors</title>
+    </head>
+    <body onload="onInit()">
+        <h1>Know your selectors</h1>
+        
+        <section class="big">
+            <p class="medium long round">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque impedit, ipsa illo, inventore tenetur minima, dolorem laboriosam earum rem reprehenderit quae qui alias quod aliquid deleniti sit cum sint?
+            </p>
+            <p class="medium happy">
+                Lorem ipsum dolor sit amet <span class="small round">consectetur</span> adipisicing elit. Voluptates cumque <span class="small">impedit</span>, ipsa illo, inventore tenetur minima, <span class="small">dolorem</span> laboriosam earum rem reprehenderit quae qui alias quod aliquid deleniti sit cum sint?
+            </p>
+            <p class="medium sad">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque impedit, ipsa illo, inventore tenetur minima, dolorem laboriosam earum rem <span class="small">reprehenderit</span> quae qui alias quod aliquid deleniti sit cum sint?
+            </p>
+        </section>
+
+        <section data-food="pizza" class="big happy">
+            <p class="medium sad">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque impedit, ipsa illo, inventore tenetur minima, dolorem laboriosam earum rem reprehenderit quae qui alias quod aliquid deleniti sit cum sint?
+            </p>
+            <p data-food="tomato soup" class="medium round">
+                Lorem ipsum dolor sit amet <span baba class="small happy">consectetur</span> adipisicing elit. Voluptates cumque <span class="small">impedit</span>, ipsa illo, inventore tenetur minima, <span class="small">dolorem</span> laboriosam earum rem reprehenderit quae qui alias quod aliquid deleniti sit cum sint?
+            </p>
+            <p class="medium round long">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque impedit, ipsa illo, inventore tenetur minima, dolorem laboriosam earum rem <span class="small">reprehenderit</span> quae qui alias quod aliquid deleniti sit cum sint?
+            </p>
+        </section>
+
+        <section class="big">
+            <p data-food="pea soup" class="medium long round">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque impedit, ipsa illo, inventore tenetur minima, dolorem laboriosam earum rem reprehenderit quae qui alias quod aliquid deleniti sit cum sint?
+            </p>
+            <p class="medium happy">
+                Lorem ipsum dolor sit amet <span class="small">consectetur</span> adipisicing elit. Voluptates cumque <span class="small happy">impedit</span>, ipsa illo, inventore tenetur minima, <span class="small round">dolorem</span> laboriosam earum rem reprehenderit quae qui alias quod aliquid deleniti sit cum sint?
+            </p>
+            <p data-food="fresh tomato" class="medium sad">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque impedit, ipsa illo, inventore tenetur minima, dolorem laboriosam earum rem <span class="small long">reprehenderit</span> quae qui alias quod aliquid deleniti sit cum sint?
+            </p>
+        </section>
+
+        <script>
+            function onInit() {
+                const els = document.querySelectorAll('p, section, span')
+                els.forEach(el => el.dataset.classList = '.' + Array.from(el.classList).join('.'))
+            }
+        </script>
+    </body>
+</html>

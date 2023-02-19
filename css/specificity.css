@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+.debug * {
+    outline: 1px solid orange;
+}
+:root {
+    --clr-dark: #555;
+    --clr-light: #ededed;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    margin-block-start: 0;
+    cursor: pointer;
+    font-family: monospace;
+    color: var(--clr-dark);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+
+    padding: 10px;
+    background-color: lightblue;
+    border-block-start: .5rem solid white;
+}
+
+/* not */
+
+nav a:not(last-child) {
+    margin-inline-end: clamp(10px, 2vw, 20px);
+}
+
+/* clamp() */
+
+nav a {
+    font-size: clamp(12px, 2vw, 20px);
+}
+
+/* Dev tools - hover state over parent */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* What happens if we change the order of the next two rules? */
+
+header:hover .logo {
+    color: var(--clr-light);
+}
+header .logo:hover {
+    color: pink;
+}
+
+span{
+    font-size: .7em;
+}
+
+.heading-container {
+    margin-block: 100vh;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* :Start Here */
+
+h1 {
+    padding: 40px;
+    font-size: clamp(14px, 3.5vw, 32px);
+    /* font-size: 3.5vw; */
+}
+
+/* : <h1> outside any <div>  */
+
+/* #h1-outside-div{
+    background-color: rgb(97, 132, 167);
+} */
+
+/* h1.spe-ci-fi-ci-ty {
+    background-color: rgb(175, 209, 65);
+} */
+
+/* .spe-ci-fi-ci-ty{
+    background-color: lightseagreen;
+} */
+/* .spe-ci-fi-ci-ty{
+    background-color: black;
+} */
+
+h1{
+    background-color: lightblue;
+    background-color: pink ;
+}
+
+h1{
+    background-color: lightblue;
+}
+
+/* :<h1> inside a <div> */
+
+/* #h1-in-div{
+    background-color: rgb(97, 132, 167);
+} */
+
+/* div.heading-container .spe-ci-fi-ci-ty {
+    background-color: darkseagreen;
+} */
+
+/* div.heading-container h1 {
+    background-color: beige;
+} */
+
+.heading-container h1 {
+    background-color: rgb(255, 207, 117);
+}

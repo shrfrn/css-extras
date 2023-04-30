@@ -61,6 +61,7 @@ nav a {
 header:hover .logo {
     color: var(--clr-light);
 }
+
 header .logo:hover {
     color: pink;
 }
@@ -71,6 +72,7 @@ span{
 
 .heading-container {
     margin-block: 100vh;
+    margin-block: 100dvh;
 }
 
 .center-text {
@@ -91,19 +93,18 @@ h1 {
     background-color: rgb(97, 132, 167);
 } */
 
-/* h1.spe-ci-fi-ci-ty {
+/* h1.heading {
     background-color: rgb(175, 209, 65);
 } */
 
-/* .spe-ci-fi-ci-ty{
+/* .heading{
     background-color: lightseagreen;
 } */
-/* .spe-ci-fi-ci-ty{
+/* .heading{
     background-color: black;
 } */
 
 h1{
-    background-color: lightblue;
     background-color: pink ;
 }
 
@@ -117,7 +118,7 @@ h1{
     background-color: rgb(97, 132, 167);
 } */
 
-/* div.heading-container .spe-ci-fi-ci-ty {
+/* div.heading-container .heading {
     background-color: darkseagreen;
 } */
 

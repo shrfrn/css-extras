@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: monospace;
+    text-align: center;
+    margin-block-start: 40px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    width: 200px;
+    height: 200px;
+
+    background-color: darkseagreen;
+    margin: 100px auto;    
+}
+
+input[type="checkbox"] {
+    scale: 1.2;
+}
+
+input[type="checkbox"]:checked {
+    translate: 0 50px;
+}
+
+input[type="checkbox"]:focus {
+    scale: 3;
+    outline: none;
+}
+
+input[type="checkbox"]:checked {
+    translate: 0 50px;
+}

@@ -13,8 +13,9 @@ h1 {
     margin: 100px auto 10px;
     font-family: monospace;
 }
+
 input[type="checkbox"] {
-    display: none;
+    /* display: none; */
 }
 
 /* :Basic Example */
@@ -32,6 +33,7 @@ input[type="checkbox"] {
     border: 1px solid lightgrey;
     border-radius: 6px;
 }
+
 label span {
     font-family: monospace;
     font-size: 1.2em;
@@ -53,7 +55,7 @@ label span {
     transition: all 0.4s;
 }
 
-input:checked ~ .control-me {
+input:checked + .control-me {
     background-color: lightblue;
 }
 
@@ -71,6 +73,7 @@ input:checked ~ .control-me {
     
     border-radius: 555px;
 }
+
 .pill-checkbox-label > div {
     position: absolute;
     left: 0;
@@ -84,6 +87,7 @@ input:checked ~ .control-me {
     
     transition: all 0.4s ease-in-out;
 }
+
 #pill-checkbox:checked + .pill-checkbox-label > div {
     translate: 100% 0;
 }

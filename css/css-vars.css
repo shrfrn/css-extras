@@ -7,6 +7,10 @@
     --bg-clr: rgb(253, 215, 100);
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 p {
     background-color: var(--bg-clr, lightblue);
 }
@@ -19,6 +23,14 @@ p {
 
 .bg-pink:hover {
     --bg-clr: pink;
+}
+
+.bg-pink span {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: var(--bg-clr);
 }
 
 span {

@@ -11,13 +11,16 @@ section {
     position: relative;
     margin-block-start: 3em;
 }
+
 p, span {
     position: relative;
     outline: 1px solid orange;
 }
+
 span {
     cursor: pointer;
 }
+
 :is(p, section, span)::before{
     content: attr(data-class-list);
     position: absolute;
@@ -26,6 +29,7 @@ span {
     font-family: monospace;
     font-weight: bold;
 }
+
 section::before {
     top: -1.3em;
     left: 0;
@@ -41,6 +45,7 @@ p::before {
     background-color: rgba(176, 196, 222, .9);
     font-size: 20px;
 }
+
 span::before {
     top: -1.2em;
     right: -3em;
@@ -50,6 +55,7 @@ span::before {
     transition: 400ms;
     opacity: 0;
 }
+
 span:hover::before {
     opacity: 1;
 }

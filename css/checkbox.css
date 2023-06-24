@@ -32,7 +32,3 @@ input[type="checkbox"]:focus {
     scale: 3;
     outline: none;
 }
-
-input[type="checkbox"]:checked {
-    translate: 0 50px;
-}

@@ -25,18 +25,18 @@ p {
     --bg-clr: pink;
 }
 
+span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--btn-clr); /* --btn-clr is undefined in this scope */
+}
+
 .bg-pink span {
     position: fixed;
     bottom: 20px;
     right: 20px;
 
     background-color: var(--bg-clr);
-}
-
-span {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: var(--btn-clr); /* --btn-clr is undefined in this scope */
 }
 
 /* Scoped CSS variable declaration */

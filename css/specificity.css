@@ -21,6 +21,9 @@ body {
     cursor: pointer;
     font-family: monospace;
     color: var(--clr-dark);
+
+    width: clamp(300px, 90vw, 820px);
+    margin: 0 auto;
 }
 
 header {
@@ -73,7 +76,7 @@ span{
 
 .heading-container {
     margin-block: 100vh;
-    margin-block: 100dvh;
+    margin-block: 100dvh; /* Progressive Enhancement */
 }
 
 .center-text {

@@ -5,6 +5,7 @@
 .debug * {
     outline: 1px solid orange;
 }
+
 :root {
     --clr-dark: #555;
     --clr-light: #ededed;

@@ -1,0 +1,114 @@
+/**** Basics ****/
+
+/* .medium {
+    background-color: lightpink;
+} */
+
+/* .medium.long {
+    background-color: lightpink;
+} */
+
+/* .medium .long {
+    background-color: lightpink;
+} */
+
+/* .medium .happy {
+    background-color: lightpink;
+} */
+
+/* .medium, .happy {
+    background-color: lightpink;
+} */
+
+/* .small, .happy {
+    background-color: lightpink;
+} */
+
+/* .happy .happy {
+    background-color: lightpink;
+} */
+
+/* .happy > .happy {
+    background-color: lightpink;
+} */
+
+/* .big .round {
+    background-color: lightpink;
+} */
+
+/* .big > .round {
+    background-color: lightpink;
+} */
+
+/**** Attribute Selectors ****/
+
+/* [data-food] {
+    background-color: lightpink;
+} */
+
+/* [data-food="pizza"] {
+    background-color: lightpink;
+} */
+
+/* [data-food="tomato"] {
+    background-color: lightpink;
+} */
+
+/* [data-food^="tomato"] {
+    background-color: lightpink;
+} */
+
+/* [data-food$="tomato"] {
+    background-color: lightpink;
+} */
+
+/* [data-food*="tomato"] {
+    border-top: 10px solid green;
+    background-color: tomato;
+} */
+
+/**** :not() ****/
+
+/* .small {
+    background-color: lightpink;
+} */
+
+/* .small:not(.happy) {
+    background-color: lightpink;
+} */
+
+/* .medium:not(.sad) {
+    background-color: lightpink;
+} */
+
+/* .medium:not(.sad, [data-food]) {
+    background-color: lightpink;
+} */
+
+/**** :is() ****/
+
+/* .small.happy, .small.round {
+    background-color: lightpink;
+} */
+
+/* .small:is(.happy, .round) {
+    background-color: lightpink;
+} */
+
+/* .happy:not(p), .round:not(p) {
+    background-color: lightpink;
+} */
+
+/**** Adjacent Sibling ****/
+
+/* .round + .small {
+    background-color: lightpink;
+} */
+
+/* .round ~ .small {
+    background-color: lightpink;
+} */
+
+/**** :checked ****/
+/**** :focus-within ****/
+/**** :has() ****/

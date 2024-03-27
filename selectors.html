@@ -8,7 +8,13 @@
         <title>selectors</title>
     </head>
     <body onload="onInit()">
-        <h1>Know your selectors</h1>
+        <header>
+            <h1>Know your selectors</h1>
+            <label class="btn-toggle">
+                <div class="switch"></div>
+                <input type="checkbox">
+            </label>
+        </header>
         
         <section class="big">
             <p class="medium long round">
@@ -16,7 +22,7 @@
                 <input type="checkbox">
             </p>
             <p class="medium happy">
-                Lorem ipsum dolor sit amet <span class="small round">consectetur</span> adipisicing elit. Voluptates cumque <span class="small">impedit</span>, ipsa illo, inventore tenetur minima, <span class="small">dolorem</span> laboriosam earum rem reprehenderit quae qui alias quod aliquid deleniti sit cum sint?
+                Lorem ipsum dolor sit amet <span class="small round">consectetur</span> adipisicing elit. Voluptates cumque <span class="small" data-food="tomato">impedit</span>, ipsa illo, inventore tenetur minima, <span class="small">dolorem</span> laboriosam earum rem reprehenderit quae qui alias quod aliquid deleniti sit cum sint?
                 <input type="checkbox">
             </p>
             <p class="medium sad">
@@ -59,6 +65,13 @@
             function onInit() {
                 const els = document.querySelectorAll('p, section, span')
                 els.forEach(el => el.dataset.classList = '.' + Array.from(el.classList).join('.'))
+                els.forEach(el => {
+                    el.dataset.dataAttrs = ''
+                    for(let key in el.dataset) {
+                        if(key === 'classList' || key === 'dataAttrs') continue
+                        el.dataset.dataAttrs += `[${key}="${el.dataset[key]}"]`
+                    }
+                })
             }
         </script>
     </body>

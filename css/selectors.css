@@ -25,6 +25,11 @@ span {
     outline: 1px solid red;
 }
 
+input[type="checkbox"] {
+    position: relative;
+    top: 2px;
+}
+
 span {
     cursor: pointer;
 }

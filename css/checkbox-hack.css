@@ -15,7 +15,7 @@ h1 {
 }
 
 input[type="checkbox"] {
-    display: none;
+    display: none; 
 }
 
 /* :Basic Example */
@@ -32,6 +32,10 @@ input[type="checkbox"] {
     background-color: beige;
     border: 1px solid lightgrey;
     border-radius: 6px;
+}
+
+label {
+    cursor: pointer;
 }
 
 label span {
@@ -71,7 +75,7 @@ input:checked + .control-me {
     height: 30px;
     margin: 0 auto;
     
-    border-radius: 555px;
+    border-radius: 100vh;
 }
 
 .pill-checkbox-label > div {
@@ -81,13 +85,14 @@ input:checked + .control-me {
 
     width: 50%;
     height: 100%;
+    scale: 85%;
     
     background-color: darkseagreen;
     border-radius: 50%;
     
-    transition: all 0.4s ease-in-out;
+    transition: translate 400ms ease-in-out;
 }
 
 #pill-checkbox:checked + .pill-checkbox-label > div {
-    translate: 100% 0;
+    translate: 100%;
 }

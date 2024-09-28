@@ -70,7 +70,7 @@ header .logo:hover {
     color: pink;
 }
 
-span{
+span {
     font-size: .7em;
 }
 
@@ -93,7 +93,7 @@ h1 {
 
 /* : <h1> outside any <div>  */
 
-/* #h1-outside-div{
+/* #h1-outside-div {
     background-color: rgb(97, 132, 167);
 } */
 
@@ -101,24 +101,25 @@ h1 {
     background-color: rgb(175, 209, 65);
 } */
 
-/* .heading{
+/* .heading {
     background-color: lightseagreen;
 } */
-/* .heading{
+ 
+/* .heading {
     background-color: black;
 } */
 
-h1{
+h1 {
     background-color: pink ;
 }
 
-h1{
+h1 {
     background-color: lightblue;
 }
 
 /* :<h1> inside a <div> */
 
-/* #h1-in-div{
+/* #h1-in-div {
     background-color: rgb(97, 132, 167);
 } */
 

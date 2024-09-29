@@ -41,7 +41,7 @@ header {
 
 /* not */
 
-nav a:not(last-child) {
+nav a:not(:last-child) {
     margin-inline-end: clamp(10px, 2vw, 20px);
 }
 

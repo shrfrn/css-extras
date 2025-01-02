@@ -78,41 +78,53 @@ h1 span {
     scale: 1.1;
 } */
 
-.cards:has(#narrow:checked) {
+.spacing:has(#narrow:checked) {
     --card-spacing: 10px;
 }
 
-.cards:has(#medium:checked) {
+.spacing:has(#medium:checked) {
     --card-spacing: 20px;
 }
 
-.cards:has(#wide:checked) {
+.spacing:has(#wide:checked) {
     --card-spacing: 30px;
 }
 
-.cards:has(#x-wide:checked) {
+.spacing:has(#x-wide:checked) {
     --card-spacing: 40px;
 }
 
-.cards form {
+.spacing form {
     margin-block-end: 2em;
     width: max-content;
     margin-inline: auto;
 }
 
-.cards form input {
+.spacing fieldset {
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: .5rem;
+}
+
+.spacing legend {
+    font-size: .8em;
+    color: gray;
+}
+
+.spacing form input {
     width: 0;
     height: 0;
     opacity: 0;
 }
 
-.cards form input:checked + label {
-    background-color: orange;
-}
-
-.cards form label {
+.spacing form label {
     padding: .2em;
     border-radius: .2em;
+    cursor: pointer;
+}
+
+.spacing form input:checked + label {
+    background-color: orange;
 }
 
 .card-container {
@@ -128,12 +140,11 @@ h1 span {
 }
 
 .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 
     aspect-ratio: 3 / 4;
-    /* padding: 1em; */
-    background-color: lightblue;
-    font-size: 2em;
+    background-color: lightsteelblue;
+    font-size: 10vw;
+    font-weight: bold;
 }

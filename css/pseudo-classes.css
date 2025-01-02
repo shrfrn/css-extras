@@ -52,7 +52,7 @@ label:focus-within {
 }
 
 .demo-form :out-of-range {
-    background-color: red;
+    background-color: orange;
 }
 
 .demo-form :invalid {

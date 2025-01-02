@@ -37,10 +37,6 @@ fieldset {
     margin: 2em auto;
 }
 
-fieldset:focus-within {
-    border: 2px solid palevioletred;
-}
-
 fieldset legend {
     font-size: .8em;
     font-weight: bold;
@@ -53,6 +49,7 @@ fieldset :not(legend) {
 }
 
 input {
+    /* display: none; */
     width: 0;
     padding: 0;
     margin: 0;
@@ -62,14 +59,6 @@ input:checked + .tag {
     color: var(--clr-light);
 }
 
-input[type="checkbox"]:focus:not(:checked) + .tag {
-    outline: 1px solid lightgray;
-}
-
-input[type="checkbox"]:focus:checked + .tag {
-    outline: 1px solid palevioletred;
-}
-
 input[type="checkbox"]:checked + .tag {
     background-color: lightsteelblue;
 }
@@ -77,3 +66,15 @@ input[type="checkbox"]:checked + .tag {
 input[type="radio"]:checked + .tag {
     background-color: orangered;
 }
+
+/* input[type="checkbox"]:focus:not(:checked) + .tag {
+    outline: 1px solid lightgray;
+} */
+
+/* input[type="checkbox"]:focus:checked + .tag {
+    outline: 1px solid palevioletred;
+} */
+
+/* fieldset:focus-within {
+    border: 2px solid palevioletred;
+} */

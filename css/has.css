@@ -19,6 +19,8 @@ h1 span {
     font-size: 1.1em;
 }
 
+/* Image Gallery */
+
 .img-gallery {
     display: grid;
     grid-template-columns: repeat(3, 200px);
@@ -42,6 +44,8 @@ h1 span {
     scale: .9;
     opacity: .6;
 } */
+
+/* Avatars */
 
 .avatar-list {
     display: flex;
@@ -78,52 +82,38 @@ h1 span {
     scale: 1.1;
 } */
 
-.spacing:has(#narrow:checked) {
-    --card-spacing: 10px;
-}
+/* Cards */
 
-.spacing:has(#medium:checked) {
-    --card-spacing: 20px;
-}
-
-.spacing:has(#wide:checked) {
-    --card-spacing: 30px;
-}
-
-.spacing:has(#x-wide:checked) {
-    --card-spacing: 40px;
-}
-
-.spacing form {
+.cards form {
     margin-block-end: 2em;
     width: max-content;
     margin-inline: auto;
 }
 
-.spacing fieldset {
+.cards fieldset {
     display: flex;
     border: 1px solid lightgray;
     border-radius: .5rem;
 }
 
-.spacing legend {
+.cards legend {
     font-size: .8em;
     color: gray;
 }
 
-.spacing form input {
+.cards form input {
     width: 0;
     height: 0;
     opacity: 0;
 }
 
-.spacing form label {
+.cards form label {
     padding: .2em;
     border-radius: .2em;
     cursor: pointer;
 }
 
-.spacing form input:checked + label {
+.cards form input:checked + label {
     background-color: orange;
 }
 
@@ -131,7 +121,7 @@ h1 span {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 12vw;
-    gap: var(--card-spacing, 20px);
+    gap: var(--card-cards, 20px);
     place-content: center;
 
     margin-block-end: 100vh;
@@ -140,11 +130,47 @@ h1 span {
 }
 
 .card {
+    --clr-card: lightsteelblue;
+
     display: grid;
     place-items: center;
 
     aspect-ratio: 3 / 4;
-    background-color: lightsteelblue;
+    background-color: var(--clr-card, lightsteelblue);
     font-size: 10vw;
     font-weight: bold;
 }
+
+.cards:has(#narrow:checked) {
+    --card-cards: 10px;
+}
+
+.cards:has(#medium:checked) {
+    --card-cards: 20px;
+}
+
+.cards:has(#wide:checked) {
+    --card-cards: 30px;
+}
+
+.cards:has(#x-wide:checked) {
+    --card-cards: 40px;
+}
+
+/* Quantity Queries */
+
+/* .card-container:has(:nth-child(5)) .card {
+    --clr-card: orange;
+}
+
+.card-container:has(:nth-child(6)) .card {
+    --clr-card: red;
+}
+
+.card-container:has(:nth-child(7)) .card {
+    --clr-card: darkseagreen;
+}
+
+.card-container:has(:nth-child(8)) .card {
+    --clr-card: purple;
+} */

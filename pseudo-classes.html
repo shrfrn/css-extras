@@ -10,17 +10,25 @@
     <body>
         <section class="demo-form">
             <h2>Using <span>:focus, :focus-visible & :focus-within</span></h2>
-            <label>
-                <span>Name:</span>
-                <input type="email">
-            </label>
-            <label>
-                <span>Age:</span>
-                <input type="number" min="4" max="120" placeholder="Age">
-            </label>
-            <button>Submit</button>
+            <form onsubmit="onSubmit(event)">
+                <label>
+                    <span>Name:</span>
+                    <input type="email">
+                </label>
+                <label>
+                    <span>Age:</span>
+                    <input type="number" min="4" max="120" placeholder="Age">
+                </label>
+                <button>Submit</button>
+            </form>
         </section>
 
         <h2>Using <a href="./target.html#long-text">:target</a></h2>
+
+        <script>
+            function onSubmit(ev) {
+                ev.preventDefault()
+            }
+        </script>
     </body>
 </html>

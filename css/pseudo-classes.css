@@ -33,6 +33,7 @@ h2 {
     font-weight: normal;
     font-family: monospace;
     text-align: center;
+    text-wrap: balance;
 }
 
 .demo-form :focus {         /* Change to :focus-visible */
@@ -41,7 +42,24 @@ h2 {
 /* 
 .demo-form:focus-within {
     outline: 2px dashed orangered;
-} */
+}
+
+.demo-form form {
+    display: flex;
+    gap: 20px;
+}
+
+@media (width < 550px ) {
+    .demo-form form {
+        flex-direction: column;
+    }
+
+    label {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+}
 
 label:focus-within {
     font-weight: bold;

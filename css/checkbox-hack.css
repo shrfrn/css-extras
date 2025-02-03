@@ -85,7 +85,8 @@ input:checked + .control-me {
     border-radius: 100vh;
 }
 
-.pill-checkbox-label > div {
+.pill-checkbox-label::after {
+    content: '';
     position: absolute;
     left: 0;
     top:0;
@@ -100,6 +101,6 @@ input:checked + .control-me {
     transition: translate 400ms ease-in-out;
 }
 
-#pill-checkbox:checked + .pill-checkbox-label > div {
+#pill-checkbox:checked + .pill-checkbox-label::after {
     translate: 100%;
 }

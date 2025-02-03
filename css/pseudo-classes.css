@@ -39,7 +39,7 @@ h2 {
 .demo-form :focus {         /* Change to :focus-visible */
     outline: 2px dashed orangered;
 }
-/* 
+
 .demo-form:focus-within {
     outline: 2px dashed orangered;
 }

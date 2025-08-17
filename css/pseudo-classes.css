@@ -69,16 +69,12 @@ form :placeholder-shown {
     outline: 2px dashed lightblue;
 }
 
-form :invalid {
+input:invalid {
     background-color: red;
 }
 
-form :out-of-range {
+input:out-of-range {
     background-color: orange;
-}
-
-.demo-form :invalid {
-    background-color: red;
 }
 
 body::after {

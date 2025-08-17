@@ -1,0 +1,86 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100vh;
+}
+
+h1 {
+	text-align: center;
+	margin-block-end: 100px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 180px);
+	gap: 10px;
+	justify-content: center;
+
+	@media (width < 900px) {
+		grid-template-columns: repeat(3, 180px);
+	}
+}
+
+img {
+	background-color: darkgray;
+	transition: opacity 400ms;
+
+	&:hover {
+		opacity: 0.3;
+	}
+}
+
+.card {
+	width: 180px;
+	aspect-ratio: 1;
+
+	background-color: lightsteelblue;
+
+	&:nth-child(odd) {
+		background-color: darkkhaki;
+	}
+
+	&:hover {
+		background-color: yellowgreen;
+		cursor: pointer;
+	}
+}
+
+.number-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+	gap: 3px;
+	background-color: lightblue;
+	border: 3px solid lightblue;
+
+	div {
+		position: relative;
+		display: grid;
+		place-items: center;
+		background-color: lightgray;
+		cursor: pointer;
+
+		::after {
+			content: '';
+			position: absolute;
+			inset: auto 3px 6px 3px;
+			border-block-start: 5px solid orange;
+		}
+
+		&:hover {
+			outline: 2px solid orange;
+		}
+	}
+
+	div span {
+		padding: 2px 6px;
+		outline: 1px solid whitesmoke;
+		transition: background-color 400ms;
+
+		&:hover {
+			background-color: whitesmoke;
+		}
+	}
+}

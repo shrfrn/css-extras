@@ -6,6 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/reset.css">
         <title>reset</title>
+        <style>
+            .expandable {
+                height: 2lh;
+                transition: height 1s;
+
+                padding: .5lh;
+                background-color: lightgray;
+            }
+
+            .expandable > p:first-child {
+                margin-block-start: 0;
+                font-weight: bold;
+            }
+
+            .expandable > p:last-child {
+                margin: 0;
+            }
+
+            .expandable:hover {
+                height: auto;
+            }
+        </style>
     </head>
     <body>
         <h1>A Modern CSS Reset</h1>
@@ -23,6 +45,11 @@
             <li>Another Option</li>
             <li>On More Option</li>
         </ul>
+
+        <section class="expandable">
+            <p>An unfolding list</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam est, voluptatem harum architecto officiis eum, quas enim nisi ad libero doloribus. Nisi, nulla, assumenda temporibus nesciunt ipsam enim provident expedita id incidunt eveniet quia veritatis, consequatur animi deleniti officia nemo harum consequuntur quaerat. Laudantium illo natus aspernatur placeat dicta consequuntur, ducimus ipsum officiis omnis blanditiis quasi ullam cumque, officia doloribus.</p>
+        </section>
         
         <img src="img/moon.jpg" alt="An image of the moon">
         <p id="last-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste blanditiis quod, dolorum dicta earum harum, esse molestias minus rem sequi odio distinctio non maiores ipsum? Corrupti velit ab voluptates libero adipisci minus dicta fuga. Nulla aut provident maiores doloremque, saepe totam nemo perspiciatis vel illo, facere fugit distinctio recusandae sequi sed quaerat unde dolore iure ex id at quia odio modi. Itaque enim, velit incidunt totam labore quod illum? Veritatis, eveniet eum! Itaque aliquam ullam mollitia, quas hic temporibus officia necessitatibus vel nisi reiciendis excepturi amet sunt voluptatibus? Atque quidem magni in voluptas explicabo nostrum perspiciatis molestiae corporis dolorum.</p>        

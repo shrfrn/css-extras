@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+    max-width: 65ch;
     margin: 0 0 1em; /* !? */
     text-wrap: pretty;
 }
@@ -22,15 +23,15 @@ ul, ol {
     list-style: none;
 }
 
-a {
+a[class] {
     text-decoration: none;
     color: inherit;
 }
 
-a:not([class]) {
+/* a:not([class]) {
     text-decoration: underline;
     text-decoration-skip-ink: auto;
-}
+} */
 
 input, button, textarea, select {
     max-width: 100%;
@@ -44,5 +45,6 @@ html {
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
+        interpolate-size: allow-keywords;
     }
 }

@@ -51,19 +51,18 @@
 } */
 
 /* [data-food="tomato"] {
-    background-color: lightpink;
+    background-color: tomato;
 } */
 
 /* [data-food^="tomato"] {
-    background-color: lightpink;
+    background-color: tomato;
 } */
 
 /* [data-food$="tomato"] {
-    background-color: lightpink;
+    background-color: tomato;
 } */
 
 /* [data-food*="tomato"] {
-    border-top: 10px solid green;
     background-color: tomato;
 } */
 
@@ -96,6 +95,10 @@
 } */
 
 /* .happy:not(p), .round:not(p) {
+    background-color: lightpink;
+} */
+    
+/* :not(p):is(.happy, .round) {
     background-color: lightpink;
 } */
 

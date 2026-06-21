@@ -70,7 +70,7 @@ h1 span {
     scale: 1.3;
 } */
 
-/* .avatar-list img:has(+ :hover) {
+/* .avatar-list img:has(+ img:hover) {
     scale: 1.3;
 } */
 
@@ -78,7 +78,7 @@ h1 span {
     scale: 1.1;
 } */
 
-/* .avatar-list img:has(+ img + :hover) {
+/* .avatar-list img:has(+ img + img:hover) {
     scale: 1.1;
 } */
 
@@ -159,7 +159,7 @@ h1 span {
 
 /* Quantity Queries */
 
-/* .card-container:has(:nth-child(5)) .card {
+.card-container:has(:nth-child(5)) .card {
     --clr-card: orange;
 }
 
@@ -173,4 +173,4 @@ h1 span {
 
 .card-container:has(:nth-child(8)) .card {
     --clr-card: purple;
-} */
+}

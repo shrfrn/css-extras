@@ -41,7 +41,7 @@ h2 {
 }
 
 .demo-form:focus-within {
-    outline: 2px dashed orangered;
+    outline: 2px dashed darkseagreen;
 }
 
 .demo-form form {

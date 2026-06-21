@@ -48,7 +48,7 @@ nav a:not(:last-child) {
 /* clamp() */
 
 nav a {
-    font-size: clamp(12px, 2vw, 20px);
+    font-size: clamp(12px, 2vw, 18px);
 }
 
 /* Dev tools - hover state over parent */
@@ -87,7 +87,7 @@ span {
 
 h1 {
     padding: 40px;
-    font-size: clamp(14px, 3.5vw, 32px);
+    font-size: clamp(16px, 3.5vw, 24px);
     /* font-size: 3.5vw; */
 }
 

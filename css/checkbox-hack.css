@@ -20,7 +20,6 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-    translate: 20vw;
     scale: 2;
     rotate: 25deg;
 }

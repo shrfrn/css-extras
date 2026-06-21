@@ -12,6 +12,7 @@
         <header>
             <h1>Know your selectors</h1>
             <label class="btn-toggle">
+                <input type="checkbox" onchange="onSaveState(this)">
                 <div class="switch"></div>
             </label>
         </header>
@@ -54,6 +55,9 @@
 
         <script>
             function onInit() {
+                const elCheckbox = document.querySelector('input')
+                elCheckbox.checked = localStorage.switchState ? JSON.parse(localStorage.switchState) : false
+                
                 const els = document.querySelectorAll('p, section, span')
                 els.forEach(el => el.dataset.classList = '.' + Array.from(el.classList).join('.'))
                 els.forEach(el => {
@@ -63,6 +67,10 @@
                         el.dataset.dataAttrs += `[${key}="${el.dataset[key]}"]`
                     }
                 })
+            }
+
+            function onSaveState({ checked }) {
+                localStorage.switchState = JSON.stringify(checked)
             }
         </script>
     </body>
